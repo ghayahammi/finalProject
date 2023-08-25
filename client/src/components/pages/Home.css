@@ -1,0 +1,80 @@
+/* Home.css */
+
+.home-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image.jpeg'); /* Remplacez 'your-image.jpg' par le nom de votre image */
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le conteneur */
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+  }
+  
+  .home-title {
+    font-size: 2.5rem;
+    margin-bottom: 400px;
+    color: #000;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    color: #000;
+    margin-bottom: 100px;
+ 
+  }
+   /* Home.css */
+
+/* ... (les autres styles) */
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  border: 2px solid #060707; /* Bordure pour le bouton */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, border-color 0.3s;
+}
+
+.modal-buttons button.register-button {
+  background-color: transparent;
+  color: #007bff;
+}
+
+.modal-buttons button.login-button {
+  background-color: transparent;
+  color: #28a745;
+}
+
+.modal-buttons button:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #333; /* Changement de couleur de la bordure au survol */
+  transform: scale(1.05);
+}
